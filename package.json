@@ -1,6 +1,6 @@
 {
-	"name": "gulp-bower",
-	"version": "0.0.12",
+	"name": "eveoh-gulp-bower",
+	"version": "0.0.13",
 	"description": "Install Bower packages.",
 	"main": "index.js",
 	"dependencies": {
@@ -27,7 +27,7 @@
 	"author": "Alexander Zonov <zont@pochta.ru>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/zont/gulp-bower/issues"
+		"url": "https://github.com/eveoh/gulp-bower/issues"
 	},
 	"engines": {
 		"node": ">=0.8"
