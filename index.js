@@ -45,8 +45,14 @@ module.exports = function (opts, cmdArguments) {
 	if (toString.call(cmdArguments[0]) !== '[object Array]') {
 		cmdArguments[0] = [];
 	}
-	cmdArguments[1] = cmdArguments[1] || {};
-	cmdArguments[2] = opts;
+
+	if (cmd === 'prune') {
+		// Eveoh: 'prune' takes one argument less than 'install'.
+		cmdArguments[1] = opts;
+	} else {
+		cmdArguments[1] = cmdArguments[1] || {};
+		cmdArguments[2] = opts;
+	}
 
 
 	// bower has some commands that are provided in a nested object structure, e.g. `bower cache clean`.
